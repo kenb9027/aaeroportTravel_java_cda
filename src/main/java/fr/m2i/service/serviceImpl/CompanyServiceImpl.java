@@ -34,8 +34,6 @@ public class CompanyServiceImpl implements CompanyService {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
-
         return newCompany;
     }
 

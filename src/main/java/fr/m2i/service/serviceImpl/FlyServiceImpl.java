@@ -25,8 +25,8 @@ public class FlyServiceImpl implements FlyService {
                       Time hourDeparture,
                       Time hourArrival,
                       Long airportDepartureId,
-                      Long airportArrivalId) {
-
+                      Long airportArrivalId)
+    {
         Fly newFly = new Fly();
         newFly.setPrice(price);
         newFly.setCompany(companyService.getCompany(companyId));
@@ -34,11 +34,8 @@ public class FlyServiceImpl implements FlyService {
         newFly.setAirportArrival(airportService.getAirport(airportArrivalId));
         newFly.setHourDeparture(hourDeparture);
         newFly.setHourArrival(hourArrival);
-
-//        flies.add(newFly);
-
         try{
-            flyDao.create(newFly);
+           return flyDao.create(newFly);
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -46,12 +43,11 @@ public class FlyServiceImpl implements FlyService {
     }
 
     @Override
-    public Fly getFly(long number) {
-        for (Fly fly :
-                flies) {
-            if (fly.getNumber() == number) {
-                return fly;
-            }
+    public Fly getFly(long id) {
+        try{
+            return flyDao.findOneBy(id);
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
         return null;
     }

@@ -16,13 +16,13 @@ public class FlyDaoImpl implements FlyDao {
     public FlyDaoImpl()
     {
         try {
+            //Teste la connexion à la BDD
             connection = ConnexionBDD.getConnection();
+            //test de la connexion au autres DAO
             companyDao = new CompanyDaoImpl();
             airportDao = new AirportDaoImpl();
-
-
         } catch (SQLException | ClassNotFoundException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
         }
     }
 
@@ -36,19 +36,23 @@ public class FlyDaoImpl implements FlyDao {
                 Statement.RETURN_GENERATED_KEYS
         );
 
+        // Remplace les "?" de la requete par les parametres de l'objet FLY
+        //parse les paramametres pour correspondre a la BDD
         statement.setFloat(1, fly.getPrice());
         statement.setLong(2, fly.getCompany().getId());
         statement.setLong(3 , fly.getAirportDeparture().getId());
         statement.setLong(4 , fly.getAirportArrival().getId());
         statement.setTime(5, fly.getHourDeparture());
         statement.setTime(6 , fly.getHourArrival());
-
+        // Execute la requete
         statement.executeUpdate();
+        //récupere l'ID généré en BDD
         ResultSet resultSet = statement.getGeneratedKeys();
+        //s'il y a un resultat , on le précise sur l'objet
         if (resultSet.next()) {
-            fly.setNumber(resultSet.getLong(1));
+            fly.setId(resultSet.getLong(1));
         }
-
+        //retourne le Vol , si pas d'id, rien ne se passe (vol non enregistré
         return fly;
     }
 

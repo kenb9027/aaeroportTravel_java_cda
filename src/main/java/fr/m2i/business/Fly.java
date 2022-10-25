@@ -5,8 +5,7 @@ import java.util.Comparator;
 
 public class Fly {
 
-    private static long counter = 0L;
-    private long number;
+    private long id;
     private float price ;
     private Company company;
 
@@ -15,11 +14,6 @@ public class Fly {
     private Airport airportDeparture;
     private Airport airportArrival;
 
-    public Fly() {
-        super();
-        this.number = ++counter;
-
-    }
 
     public Fly(
             float price,
@@ -41,11 +35,15 @@ public class Fly {
         this.airportDeparture.getFlies().add(this);
     }
 
+    public Fly() {
+
+    }
+
 
     @Override
     public String toString() {
         return "Fly{" +
-                "number=" + number +
+                "number=" + id +
                 ", price=" + price +
                 ", company=" + company +
                 ", hour Departure=" + hourDeparture +
@@ -55,8 +53,8 @@ public class Fly {
                 '}';
     }
 
-    public long getNumber() {
-        return number;
+    public long getId() {
+        return id;
     }
 
     public float getPrice() {
@@ -107,8 +105,8 @@ public class Fly {
         this.airportArrival = airportArrival;
     }
 
-    public void setNumber(long number) {
-        this.number = number;
+    public void setId(long id) {
+        this.id = id;
     }
 
     /*
