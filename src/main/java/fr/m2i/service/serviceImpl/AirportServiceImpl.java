@@ -30,7 +30,13 @@ public class AirportServiceImpl implements AirportService {
     public Airport addAirport(String name) {
 
         Airport newAirport = new Airport(name);
-        airports.add(newAirport);
+//        airports.add(newAirport);
+        try{
+            airportDao.create(newAirport);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
         return newAirport ;
     }
 

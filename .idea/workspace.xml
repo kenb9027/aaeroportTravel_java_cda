@@ -5,15 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70e474b9-53a3-404e-8c04-20f750aabac5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/m2i/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/m2i/dao/ConnexionBDD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/m2i/dao/Queries.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/m2i/dao/impl/AirportDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/m2i/dao/impl/AirportDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/m2i/service/serviceImpl/AirportServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/m2i/service/serviceImpl/AirportServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/m2i/service/serviceImpl/CompanyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/m2i/service/serviceImpl/CompanyServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/m2i/service/serviceImpl/FlyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/m2i/service/serviceImpl/FlyServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +62,7 @@
       <workItem from="1666621602866" duration="752000" />
       <workItem from="1666622489332" duration="338000" />
       <workItem from="1666622899747" duration="2588000" />
+      <workItem from="1666682813419" duration="2102000" />
     </task>
     <servers />
   </component>

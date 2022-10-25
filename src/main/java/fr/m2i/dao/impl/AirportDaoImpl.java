@@ -58,7 +58,7 @@ public class AirportDaoImpl implements AirportDao {
 
     @Override
     public ArrayList<Airport> findAll() throws SQLException {
-        ArrayList<Airport> airports = new ArrayList();
+        ArrayList<Airport> airports = new ArrayList<>();
 
         PreparedStatement preparedStatement = connection.prepareStatement(Queries.AIRPORT_FIND_ALL);
         ResultSet resultSet = preparedStatement.executeQuery();

@@ -2,16 +2,19 @@ package fr.m2i.service.serviceImpl;
 
 import fr.m2i.business.Fly;
 
+import fr.m2i.dao.FlyDao;
+import fr.m2i.dao.impl.FlyDaoImpl;
 import fr.m2i.service.FlyService;
 
 
+import java.sql.SQLException;
 import java.sql.Time;
 import java.util.ArrayList;
 
 public class FlyServiceImpl implements FlyService {
 
     private static ArrayList<Fly> flies = new ArrayList<Fly>() ;
-
+    private FlyDao flyDao = new FlyDaoImpl();
     AirportServiceImpl airportService = new AirportServiceImpl() ;
     CompanyServiceImpl companyService = new CompanyServiceImpl() ;
 
@@ -32,7 +35,13 @@ public class FlyServiceImpl implements FlyService {
         newFly.setHourDeparture(hourDeparture);
         newFly.setHourArrival(hourArrival);
 
-        flies.add(newFly);
+//        flies.add(newFly);
+
+        try{
+            flyDao.create(newFly);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
         return newFly;
     }
 
@@ -49,6 +58,11 @@ public class FlyServiceImpl implements FlyService {
 
     @Override
     public ArrayList<Fly> getFlies() {
-        return flies;
+        try{
+            return flyDao.findAll();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 }
