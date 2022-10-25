@@ -6,11 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="70e474b9-53a3-404e-8c04-20f750aabac5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/m2i/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/m2i/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/m2i/business/Fly.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/m2i/business/Fly.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/m2i/dao/impl/FlyDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/m2i/dao/impl/FlyDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/m2i/service/serviceImpl/CompanyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/m2i/service/serviceImpl/CompanyServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/m2i/service/serviceImpl/FlyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/m2i/service/serviceImpl/FlyServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +43,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Poste3/IdeaProjects/aaeroportTravel/src/main/java/fr/m2i",
+    "last_opened_file_path": "C:/Users/Poste3/IdeaProjects/aaeroportTravel/src/main/resources",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -57,6 +52,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Poste3\IdeaProjects\aaeroportTravel\src\main\resources" />
       <recent name="C:\Users\Poste3\IdeaProjects\aaeroportTravel\src\main\java\fr\m2i" />
     </key>
   </component>
@@ -73,7 +69,7 @@
       <workItem from="1666622489332" duration="338000" />
       <workItem from="1666622899747" duration="2588000" />
       <workItem from="1666682813419" duration="2372000" />
-      <workItem from="1666685388312" duration="2549000" />
+      <workItem from="1666685388312" duration="5097000" />
     </task>
     <servers />
   </component>
